@@ -1,0 +1,33 @@
+# Project 1: REST API Fundamentals
+**Decode Labs Backend Development Internship**
+Built by: Angellina Joyce Paul
+
+## 📌 About
+A stateless REST API built with Python and FastAPI.
+Demonstrates GET and POST routes with proper HTTP status codes.
+
+## 🛠️ Tech Stack
+- Python 3.14
+- FastAPI
+- Uvicorn
+
+## 🚀 How to Run
+1. Create virtual environment
+   python -m venv venv
+   venv\Scripts\activate
+
+2. Install dependencies
+   pip install fastapi uvicorn
+
+3. Run the server
+   uvicorn main:app --reload
+
+4. Open docs at
+   http://127.0.0.1:8000/docs
+
+## 📡 API Routes
+| Method | Route | Description | Status Code |
+|--------|-------|-------------|-------------|
+| GET | /users | Get all users | 200 |
+| GET | /users/{id} | Get single user | 200 / 404 |
+| POST | /users | Create new user | 201 / 400 |
